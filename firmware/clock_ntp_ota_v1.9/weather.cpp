@@ -28,7 +28,7 @@ void ICACHE_FLASH_ATTR onWeatherResponse(void* optParm, AsyncHTTPRequest* reques
       Serial.printf("Weather response: %d bytes\n", payload.length());
 
       // Parse JSON response
-      StaticJsonDocument<1536> doc;
+      JsonDocument doc;
       DeserializationError error = deserializeJson(doc, payload);
 
       if (!error) {

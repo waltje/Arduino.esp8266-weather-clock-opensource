@@ -168,7 +168,7 @@ void ICACHE_FLASH_ATTR displaySunTimes() {
   int daylightHours = daylightMinutes / 60;
   int daylightMins = daylightMinutes % 60;
 
-  char daylightStr[16];
+  char daylightStr[32];
   sprintf(daylightStr, "Day %dh %dm", daylightHours, daylightMins);
 
   display.setTextSize(1);
